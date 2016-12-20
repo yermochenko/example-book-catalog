@@ -18,6 +18,16 @@
 			</OL>
 		</DIV>
 		<DIV id="books">
+			<H2>Books</H2>
+			<OL>
+				<?php
+					foreach($books as $book) {
+				?>
+				<LI><A href="edit-book.php?id=<?php echo $book['id']; ?>"><?php echo $book['title']; ?></A> (<?php echo $book['pages']; ?> pages)</LI>
+				<?php
+					}
+				?>
+			</OL>
 		</DIV>
 	</BODY>
 </HTML>

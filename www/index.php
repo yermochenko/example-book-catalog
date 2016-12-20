@@ -9,7 +9,8 @@
 			$books->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
 			$books->execute();
 			$books = $books->fetchAll(PDO::FETCH_ASSOC);
-			print_r($books);
+		} else {
+			$books = array();
 		}
 		$pdo = NULL;
 		include 'view-index.php';
