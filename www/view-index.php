@@ -2,6 +2,7 @@
 	<HEAD>
 		<META charset="UTF-8"/>
 		<TITLE>Book catalog</TITLE>
+		<LINK rel="stylesheet" type="text/css" href="main.css">
 	</HEAD>
 	<BODY>
 		<H1>Book catalog</H1>

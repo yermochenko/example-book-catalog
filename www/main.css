@@ -1,0 +1,32 @@
+BODY {
+	margin: 0;
+	padding: 0;
+}
+H1 {
+	background: #1A015D;
+	color: #A490D9;
+	margin: 0;
+	height: 50px;
+	line-height: 50px;
+}
+H2 {
+	margin: 0;
+	color: #1A015D;
+}
+#authors {
+	float: left;
+	width: calc( 35% - 20px );
+	background: #A490D9;
+	padding: 10px;
+}
+#authors A {
+	color: #1A015D;
+}
+#authors A:hover {
+	color: #2B0295;
+}
+#books {
+	float: right;
+	width: calc( 65% - 20px );
+	padding: 10px;
+}
