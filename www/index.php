@@ -5,9 +5,7 @@
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$authors = $pdo->query('SELECT `id`, `name`, `surname` FROM `author`', PDO::FETCH_ASSOC);
 		$pdo = NULL;
-		foreach($authors as $author) {
-			print_r($author);
-		}
+		include 'view-index.php';
 	} catch(PDOException $e) {
 		header('Location: http://'.$_SERVER['HTTP_HOST'].'/error.php?message='.urlencode('Database error'));
 	}
