@@ -9,13 +9,10 @@
 			$selectedAuthor->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
 			$selectedAuthor->execute();
 			$selectedAuthor = $selectedAuthor->fetch(PDO::FETCH_ASSOC);
-			print_r($selectedAuthor);
 			$books = $pdo->prepare('SELECT `id`, `title`, `pages` FROM `book` WHERE `author_id` = :id');
 			$books->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
 			$books->execute();
 			$books = $books->fetchAll(PDO::FETCH_ASSOC);
-		} else {
-			$books = array();
 		}
 		$pdo = NULL;
 		include 'view-index.php';
