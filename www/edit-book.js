@@ -1,20 +1,3 @@
-var debug = new function() {                                      /* DEBUG */
-	this.counter = 0;                                             /* DEBUG */
-	this.out = function(obj) {                                    /* DEBUG */
-		if(this.log === undefined) {                              /* DEBUG */
-			this.log = document.getElementById("log");            /* DEBUG */
-		}                                                         /* DEBUG */
-		var str = this.log.innerHTML;                             /* DEBUG */
-		str += "DEBUG " + (this.counter++) + ": " + obj + "<BR>"; /* DEBUG */
-		this.log.innerHTML = str;                                 /* DEBUG */
-	}                                                             /* DEBUG */
-	this.clear = function() {                                     /* DEBUG */
-		if(this.log === undefined) {                              /* DEBUG */
-			this.log = document.getElementById("log");            /* DEBUG */
-		}                                                         /* DEBUG */
-		this.log.innerHTML = "";                                  /* DEBUG */
-	}                                                             /* DEBUG */
-}                                                                 /* DEBUG */
 var authors = {};
 window.onload = function() {
 	var listElement = document.getElementById("author-field");
