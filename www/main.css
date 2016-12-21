@@ -30,3 +30,9 @@ H2 {
 	width: calc( 65% - 20px );
 	padding: 10px;
 }
+FORM INPUT {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 15px;
+}

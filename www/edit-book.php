@@ -13,9 +13,7 @@
 		$author->execute();
 		$author = $author->fetch(PDO::FETCH_ASSOC);
 		$pdo = NULL;
-		print_r($authors);
-		print_r($book);
-		print_r($author);
+		include 'view-edit-book.php';
 	} catch(PDOException $e) {
 		header('Location: http://'.$_SERVER['HTTP_HOST'].'/error.php?message='.urlencode('Database error'));
 	}
