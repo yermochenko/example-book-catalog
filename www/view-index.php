@@ -47,6 +47,16 @@
 			<?php
 				}
 			?>
+			<FORM action="edit-book.php">
+				<?php
+					if(isset($selectedAuthor)) {
+				?>
+				<INPUT type="hidden" name="author-id" value="<?php echo $selectedAuthor['id']; ?>">
+				<?php
+					}
+				?>
+				<BUTTON>Add new book</BUTTON>
+			</FORM>
 		</DIV>
 	</BODY>
 </HTML>
